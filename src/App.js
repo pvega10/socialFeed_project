@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NavBar from "./components/NavBar/NavBar";
+import NavBar from './components/NavBar/NavBar';
 import PostMapper from "./components/PostMapper";
 import CreatePost from "./components/CreatePost/CreatePost";
 import './App.css'
@@ -7,7 +7,7 @@ import './App.css'
 
 function App() {
 
-const [entries, setEntries] = useState([{weight: 175, date: "11-23-2021"}, {weight: 176, date: "11-24-2021"}])
+const [entries, setEntries] = useState([])
 
 function addNewEntry (entry){
   let tempEntries =[...entries,entry];
@@ -21,6 +21,7 @@ function addNewEntry (entry){
         <h3 style ={{margin: '1em'}}>Social 
         <small className = 'text-muted'>Feed</small></h3>
         <div className='col-md-6'>
+        <div className='border-box'>
           <div>
           <NavBar parentEntries = {entries} />
           </div>
@@ -31,6 +32,7 @@ function addNewEntry (entry){
         <div className='col-md-6'>
           <div className='border-box'>
           <PostMapper parentEntries ={ entries}/>
+          </div>
           </div>
         </div>
       </div>
