@@ -29,14 +29,14 @@ function addNewEntry (entry){
           <CreatePost addNewEntryProperty ={addNewEntry}/>
           </div>
         </div>
-        <div className='col-md-6'>
+        {/* <div className='col-md-6'> */}
           <div className='border-box'>
           <PostMapper parentEntries ={ entries}/>
           </div>
           </div>
         </div>
       </div>
-    </div>
+    // </div>
   );
 }
 

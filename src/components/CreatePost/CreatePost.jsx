@@ -27,10 +27,10 @@ const CreatePost = (props) => {
         </div>
         <div className='form-group'>
             <label>Post</label>
-            <input type = 'post' className ='form-control' value = {post} onChange = {(event) => setPost(event.target.value)} />
+            <textarea type = 'post' className ='form-control' style={{flex: 1, flexWrap: 'wrap'}} value = {post} onChange = {(event) => setPost(event.target.value)} />
         </div>
 
-        <button type = 'submit' className='btn btn-primary' style ={{'margin-left' : '1em'}}>Create</button>
+        <button type = 'submit' className='btn btn-primary' style ={{'margin-left' : '30em'}}>Create</button>
         </div>
     </form>
     );
